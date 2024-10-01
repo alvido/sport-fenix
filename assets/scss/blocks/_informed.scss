@@ -9,7 +9,16 @@
         margin: 0 auto;
     }
 
+    & h2 {
+        margin-bottom: 16px;
+    }
+
+    &__form {
+        margin-top: 32px;
+    }
+
     & form {
+        margin-top: 0;
         padding: 12px 0;
         flex-direction: row;
         align-items: center;

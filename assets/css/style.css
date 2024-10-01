@@ -1910,6 +1910,16 @@ form .button--transparent {
   -o-object-position: top;
      object-position: top;
 }
+@media (hover: hover) {
+  .articles__list li a:hover {
+    color: var(--color-blue);
+  }
+}
+@media (hover: none) {
+  .articles__list li a:active {
+    color: var(--color-blue);
+  }
+}
 .articles__list li h4 {
   margin-top: 24px;
 }
@@ -1922,7 +1932,14 @@ form .button--transparent {
   max-width: 500px;
   margin: 0 auto;
 }
+.informed h2 {
+  margin-bottom: 16px;
+}
+.informed__form {
+  margin-top: 32px;
+}
 .informed form {
+  margin-top: 0;
   padding: 12px 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

@@ -14,6 +14,12 @@
                 object-fit: cover;
                 object-position: top;
             }
+            
+            & a {
+                @include hover {
+                    color: var(--color-blue);
+                }
+            }
 
             & h4 {
                 margin-top: 24px;
