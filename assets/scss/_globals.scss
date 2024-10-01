@@ -78,5 +78,7 @@ h4 {
 }
 
 h5 {
-    @include fluid-text(14, 14);
+    @include fluid-text(16, 14);
+    font-weight: 600;
+    line-height: 1.6;
 }

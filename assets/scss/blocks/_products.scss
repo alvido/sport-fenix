@@ -1,0 +1,106 @@
+.products {
+    position: relative;
+
+    & .more {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__list {
+        padding: 48px 0;
+
+        & .product {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+            @include hover {
+
+                & .wishlist,
+                & .button {
+                    opacity: 1;
+                }
+            }
+
+            &__img {
+                position: relative;
+                @include flex-center;
+                padding: 16px;
+                height: 350px;
+                background: var(--color-light-gray) no-repeat center / contain;
+
+                & span {
+                    position: absolute;
+                    left: 16px;
+                    @include flex-center;
+                    width: 70px;
+                    height: 24px;
+                    font-weight: 700;
+                    text-align: center;
+                    border-radius: 4px;
+
+                    &.new {
+                        top: 16px;
+                        background: var(--color-white);
+                    }
+
+                    &.sale {
+                        top: 48px;
+                        color: var(--color-white);
+                        background: var(--color-green);
+                    }
+                }
+
+                & .wishlist {
+                    opacity: 0;
+                    @include reset-button;
+                    @include squere(32px);
+                    @include flex-center;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    color: var(--color-dark-gray);
+                    background: var(--color-white);
+                    border-radius: 50%;
+                    box-shadow: 0px 8px 16px -8px #0F0F0F1F;
+
+                    @include hover {
+                        color: var(--color-red);
+                    }
+                }
+
+                & .button {
+                    position: absolute;
+                    bottom: 16px;
+                    left: 16px;
+                    right: 16px;
+                    opacity: 0;
+                }
+            }
+
+            &__rating {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+
+            & h5 {
+                margin: 4px 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            &__price {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+
+
+    }
+}

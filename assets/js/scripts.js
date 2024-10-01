@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Инициализация слайдеров для других секций
-  initSwiper("#products", ".products-pagination", ".products-button-next", ".products-button-prev");
+  initSwiper("#products", ".products-pagination", "", "");
 });
 
 // swiper

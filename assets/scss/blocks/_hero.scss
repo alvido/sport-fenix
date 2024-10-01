@@ -79,27 +79,29 @@
             & h3 {
                 max-width: 60%;
             }
-            & a {
-                position: relative;
-                display: inline-flex;
-                align-items: center;
-                gap: 4px;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.75;
-                letter-spacing: -0.4px;
-                border-bottom: 1px solid var(--color-dark-gray);
-                color: var(--color-dark-gray);
 
-                @include hover {
-                    color: var(--color-blue);
-                    border-color: var(--color-blue);
+        }
+    }
+}
 
-                    & svg {
-                        animation: backAndForth 1s linear infinite;
-                    }
-                }
-            }
+.more {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: -0.4px;
+    border-bottom: 1px solid var(--color-dark-gray);
+    color: var(--color-dark-gray);
+
+    @include hover {
+        color: var(--color-blue);
+        border-color: var(--color-blue);
+
+        & svg {
+            animation: backAndForth 1s linear infinite;
         }
     }
 }
