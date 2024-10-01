@@ -1,6 +1,7 @@
 .swiper {
     z-index: 0;
 }
+
 .swiper__navigation {
     display: flex;
     align-items: center;
@@ -103,5 +104,13 @@
 
     .swiper-button-next {
         right: 32px;
+    }
+}
+
+.swiper-scrollbar {
+    background: var(--color-light-gray);
+
+    &-drag {
+        background: var(--color-black);
     }
 }

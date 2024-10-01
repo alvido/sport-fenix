@@ -1,0 +1,45 @@
+.informed {
+    padding: 80px 0;
+    background: url(../images/informed-bg.png) no-repeat center / cover;
+
+    & h2,
+    & p,
+    &__form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    & form {
+        padding: 12px 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 1px solid #6C727580;
+
+        & input {
+            height: 32px;
+            padding: 0;
+            font-family: 'Gilroy';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: -0.4px;
+            background: transparent;
+            border: none
+        }
+
+        & button {
+            @include reset-button;
+            font-family: 'Gilroy';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: -0.4px;
+            color: var(--color-dark-gray);
+
+            @include hover {
+                color: var(--color-blue);
+            }
+        }
+    }
+}

@@ -1,12 +1,6 @@
 .products {
     position: relative;
 
-    & .more {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
     &__list {
         padding: 48px 0;
 

@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
       new Swiper(selector, {
         observer: true,
         observeParents: true,
-        loop: true,
+        // loop: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
@@ -116,6 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation: {
           nextEl: nextButtonClass,
           prevEl: prevButtonClass,
+        },
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
         },
         breakpoints: {
           320: {

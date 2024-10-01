@@ -1,0 +1,23 @@
+.articles {
+    margin-bottom: 80px;
+
+    &__list {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+
+        & li {
+            & img {
+                width: 100%;
+                max-height: 325px;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            & h4 {
+                margin-top: 24px;
+            }
+        }
+    }
+}
