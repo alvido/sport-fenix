@@ -7,11 +7,18 @@
         right: 0;
         top: 0;
         z-index: 1;
+        background: var(--color-white);
+
+        & .header__bottom {
+            padding: 8px 0;
+        }
     }
 
     & a {
         @include flex-center;
         gap: 4px;
+        font-size: 14px;
+        font-weight: 600;
 
         @include hover {
             color: var(--color-blue);
@@ -31,11 +38,35 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
+                & .callback {
+                    @include reset-button;
+                    height: 32px;
+                    padding: 4px 12px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: var(--color-blue);
+                    background: var(--color-white);
+                    border-radius: var(--border-radius);
+
+                    @include hover {
+                        color: var(--color-white);
+                        background: var(--color-blue);
+                    }
+                }
             }
+        }
+
+        & .change {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
     }
 
     &__bottom {
+        padding: 16px 0;
+
         & .actions {
             display: flex;
             align-items: center;

@@ -10,8 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>SPORT-FENIX</title>
-    <link rel="icon" type="image/png" href="assets/images/icon/flag.svg">
+    <link rel="icon" type="image/png" href="assets/images/icons/flag.svg">
 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -64,21 +66,24 @@
                         </a>
                     </div>
                     <div class="change">
-                        <select name="currency" id="">
-                            <option value="UAH">UAH</option>
-                            <option value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="BTC">BTC</option>
+                        <select id="currency-select" class="currency-select">
+                            <option value="UAH" data-symbol="₴">UAH</option>
+                            <option value="RUB" data-symbol="₽">RUB</option>
+                            <option value="USD" data-symbol="$">USD</option>
+                            <option value="EUR" data-symbol="€">EUR</option>
+                            <option value="BTC" data-symbol="₿">BTC</option>
                         </select>
-                        <select name="language" id="">
-                            <option value="Українська">Українська</option>
-                            <option value="English">English</option>
-                            <option value="Francais">Francais</option>
-                            <option value="Русский">Русский</option>
+                        <select id="language-select" class="language-select">
+                            <option value="ua" data-image="assets/images/icons/country/Ukraine.svg">Українська</option>
+                            <option value="en" data-image="assets/images/icons/country/UK.svg">English</option>
+                            <option value="ru" data-image="assets/images/icons/country/Russia.svg">Русский</option>
+                            <option value="fr" data-image="assets/images/icons/country/Francais.svg">Français</option>
+                            <option value="es" data-image="assets/images/icons/country/Spain.svg">Español</option>
                         </select>
                     </div>
                 </div>
             </div>
+
             <div class="header__bottom">
                 <div class="wrapper container">
                     <a href="index.html" class="header__logo logo">
@@ -88,6 +93,17 @@
                         <ul class="navigation__list">
                             <li class="menu-item menu-item-has-children current-menu-item">
                                 <a href="#">Продукція </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Амінокислоти</a></li>
+                                    <li><a href="#">Креатиновмісні</a></li>
+                                    <li><a href="#">Захист суглобів та зв'язок</a></li>
+                                    <li><a href="#">Протеїн</a></li>
+                                    <li><a href="#">Підвищення тестостерону</a></li>
+                                    <li><a href="#">Колаген</a></li>
+                                    <li><a href="#">Жироспалювачі</a></li>
+                                    <li><a href="#">Омега та Рибій жир</a></li>
+                                    <li><a href="#">Вітаміни та мінерали</a></li>
+                                </ul>
                             </li>
                             <li class="menu-item">
                                 <a href="delivery.html">Доставка </a>
@@ -151,24 +167,236 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <h1>Hero</h1>
+                    <div class="swiper" id="hero">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" style="background: var(--color-light-blue);">
+                                <div class="content">
+                                    <h2><span>КОЛАГЕН</span> для спорту</h2>
+                                    <ul class="slide__list">
+                                        <li>
+                                            <img src="assets/images/hero/img1.png" alt="">
+                                            <p>ЗБЕРЕЖЕННЯ СУГЛОБІВ, ХРЯЩІВ ТА КІСТОК ПІД ВПЛИВОМ НАВАНТАЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img2.png" alt="">
+                                            <p>ШВИДКА РЕАБІЛІТАЦІЯ ПІСЛЯ УШКОДЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img3.png" alt="">
+                                            <p>ПРИ ШОДЕННОМУ ПРИЙОМІ ВІДНОВЛЮЄ СТРУКТУРУ СУХОЖИЛЬ, ХРЯЩІВ, СУГЛОБІВ,
+                                                ЗНИЖУЄ БІЛЬ і ЗАПАЛЕННЯ</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/hero/girl1.png" alt="namelogo">
+                            </li>
+                            <li class="swiper-slide" style="background: var( --category-orange);">
+                                <div class="content">
+                                    <h2><span>КОЛАГЕН</span> для спорту</h2>
+                                    <ul class="slide__list">
+                                        <li>
+                                            <img src="assets/images/hero/img1.png" alt="">
+                                            <p>ЗБЕРЕЖЕННЯ СУГЛОБІВ, ХРЯЩІВ ТА КІСТОК ПІД ВПЛИВОМ НАВАНТАЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img2.png" alt="">
+                                            <p>ШВИДКА РЕАБІЛІТАЦІЯ ПІСЛЯ УШКОДЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img3.png" alt="">
+                                            <p>ПРИ ШОДЕННОМУ ПРИЙОМІ ВІДНОВЛЮЄ СТРУКТУРУ СУХОЖИЛЬ, ХРЯЩІВ, СУГЛОБІВ,
+                                                ЗНИЖУЄ БІЛЬ і ЗАПАЛЕННЯ</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/hero/girl2.png" alt="namelogo">
+                            </li>
+                            <li class="swiper-slide" style="background: var(--category-purple);">
+                                <div class="content">
+                                    <h2><span>КОЛАГЕН</span> для спорту</h2>
+                                    <ul class="slide__list">
+                                        <li>
+                                            <img src="assets/images/hero/img1.png" alt="">
+                                            <p>ЗБЕРЕЖЕННЯ СУГЛОБІВ, ХРЯЩІВ ТА КІСТОК ПІД ВПЛИВОМ НАВАНТАЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img2.png" alt="">
+                                            <p>ШВИДКА РЕАБІЛІТАЦІЯ ПІСЛЯ УШКОДЖЕНЬ</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/hero/img3.png" alt="">
+                                            <p>ПРИ ШОДЕННОМУ ПРИЙОМІ ВІДНОВЛЮЄ СТРУКТУРУ СУХОЖИЛЬ, ХРЯЩІВ, СУГЛОБІВ,
+                                                ЗНИЖУЄ БІЛЬ і ЗАПАЛЕННЯ</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/hero/girl1.png" alt="namelogo">
+                            </li>
+                        </ul>
+                        <div class="swiper__navigation">
+                            <div class="swiper-pagination hero-pagination"></div>
+                            <div class="swiper__navigation-buttons">
+                                <div class="swiper-button-prev hero-button-prev"></div>
+                                <div class="swiper-button-next hero-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1>Якісне харчування Якісне життя</h1>
+                        <p>Спортивне харчування від інтернет-магазину <b>Sport-Fenix</b></p>
+                    </div>
                 </div>
             </section>
+            <section class="banner">
+                <div class="container">
+                    <ul class="banner__list">
+                        <li style="background-image: url(assets/images/hero/girl2.png);">
+                            <h3>Колаген</h3>
+                            <a href="#">
+                                Придбати зараз
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.16666 10H15.8333" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 15L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 5L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="background-image: url(assets/images/hero/leg.png);">
+                            <h3>Захист суглобів та звʼязок</h3>
+                            <a href="#">
+                                Придбати зараз
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.16666 10H15.8333" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 15L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 5L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="background-image: url(assets/images/hero/spoon.png);">
+                            <h3>Вітаміни та мінерали</h3>
+                            <a href="#">
+                                Придбати зараз
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.16666 10H15.8333" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 15L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.8333 5L15.8333 10" stroke="#6C7275" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="swiper" id="products">
+                    <ul class="swiper-wrapper products__list">
+                        <li class="swiper-slide">
+                            <div class="product__img">
+                                <img src="assets/images/products/1png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper__navigation">
+                        <div class="swiper-pagination products-pagination"></div>
+                        <div class="swiper__navigation-buttons">
+                            <div class="swiper-button-prev products-button-prev"></div>
+                            <div class="swiper-button-next products-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
 
-        </main>
-
-        <footer class="footer">
-            <div class="wrapper container">
-                <a href="index.html" class="footer__logo logo">
-                    <img src="assets/images/header/logo.svg" alt="logo">
+    <footer class="footer">
+        <div class="wrapper container">
+            <a href="index.html" class="footer__logo logo">
+                <img src="assets/images/header/SportFenix.svg" alt="logo">
+                <span></span>
+                <p>Спортивне харчування саме для тебе</p>
+            </a>
+            <nav class="footer__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="menu-item">
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children current-menu-item">
+                        <a href="#">Продукція </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Амінокислоти</a></li>
+                            <li><a href="#">Креатиновмісні</a></li>
+                            <li><a href="#">Захист суглобів та зв'язок</a></li>
+                            <li><a href="#">Протеїн</a></li>
+                            <li><a href="#">Підвищення тестостерону</a></li>
+                            <li><a href="#">Колаген</a></li>
+                            <li><a href="#">Жироспалювачі</a></li>
+                            <li><a href="#">Омега та Рибій жир</a></li>
+                            <li><a href="#">Вітаміни та мінерали</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog.html">Блог </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="payment.html">Оплата </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="production.html">Контрактне виробництво </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper container">
+            <div class="info">
+                <p class="copy">Copyright © 2024 SportFenix. All rights reserved</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="social">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="white" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="16" height="16" rx="4" stroke="white" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="3" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.5 7.49999V7.50099" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.44772 14.4477 7 15 7H18V3H15C12.2386 3 10 5.23858 10 8V10H7"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </a>
             </div>
+        </div>
 
-        </footer>
+    </footer>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>

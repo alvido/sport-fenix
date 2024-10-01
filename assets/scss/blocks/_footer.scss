@@ -1,3 +1,113 @@
 .footer {
-    padding: 10px;
+    padding: 80px 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--color-white);
+    background: var(--color-black);
+
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--color-light-gray);
+
+        & span {
+            display: block;
+            width: 1px;
+            height: 24px;
+            background: var(--color-dark-gray);
+
+        }
+    }
+
+    &__navigation {
+
+        & .navigation__list {
+            gap: 40px;
+        }
+
+        & li {
+            &.menu-item-has-children {
+                @include hover {
+                    & .sub-menu {
+                        display: flex;
+                    }
+
+                    &>a {
+                        color: var(--color-blue);
+
+                        &::after {
+                            background-color: var(--color-blue);
+                            rotate: 180deg;
+                        }
+                    }
+                }
+
+                & .sub-menu {
+                    top: auto;
+                    bottom: calc(100%);
+
+                    & a {
+                        color: var(--color-black);
+
+                        @include hover {
+                            color: var(--color-blue);
+                        }
+                    }
+                }
+            }
+
+            &.current-menu-item {
+                & a {
+                    color: var(--color-white);
+                }
+            }
+
+            & a {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-white);
+            }
+
+
+        }
+    }
+
+    & .info {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        & .copy {
+            font-size: 12px;
+            color: var(--color-light-gray);
+        }
+
+
+        & a {
+            font-size: 12px;
+            font-weight: 600;
+
+            @include hover {
+                color: var(--color-blue);
+            }
+        }
+    }
+
+    & .social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & a {
+            @include flex-center;
+            @include hover {
+                color: var(--color-blue);
+            }
+        }
+    }
 }

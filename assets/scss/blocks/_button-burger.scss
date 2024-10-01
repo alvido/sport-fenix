@@ -1,6 +1,13 @@
 .burger {
     position: relative;
     z-index: 2;
+    display: none;
+
+    @include hover {
+        &::before, &::after {
+            background: var(--color-blue);
+        }
+    }
 
     &::before,
     &::after {
@@ -51,6 +58,10 @@
         &::after {
             rotate: -45deg;
 
+        }
+
+        & span {
+            opacity: 0;
         }
     }
 }

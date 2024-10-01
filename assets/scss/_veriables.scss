@@ -4,20 +4,23 @@ $container: 1120;
 :root {
 
     /*colors*/
-    --color-black: #030A16;
+    --color-black: #141718;
     --color-white: #ffffff;
-    --color-white-alt: #F9F9F9;
+    --color-light-white: #F9F9F9;
+
+    --color-dark-gray: #6C7275;
+    --color-gray: #A6A6A6;
+    --color-light-gray: #F3F5F7;
 
     --color-blue: #377DFF;
+    --color-light-blue: #90C0EC;
     --color-red: #FD5454;
 
     --category-blue: #3A8DFF;
     --category-purple: #A23DFF;
     --category-orange: #FF8C42;
 
-    --color-gray-dark: #667085;
-    --color-gray: #A6A6A6;
-    --color-light-gray: #F3F5F7;
+
 
 
 
@@ -28,17 +31,17 @@ $container: 1120;
     /*border*/
     --border: 2px solid var(--color-black);
     --border-radius: 16px;
-    --border-radius-small: 10px;
-    --border-radius-large: 30px;
+    --border-radius-small: 8px;
+    --border-radius-large: 32px;
     /*border*/
 
     /*body*/
-    --font-family-base: "AvenirNextCyr", serif;
+    --font-family-base: "Gilroy", serif;
 
     --container-width: #{$container}px;
     --container-padding-x: 20px;
 
-    --section-padding-y: clamp(3rem, 1.195rem + 7.7vw, 8.125rem);
+    --section-padding-y: 48px;
     /*body*/
 
     /*button*/
