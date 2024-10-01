@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    transition-duration: var(--transition-duration);
 
     &.fixed {
         position: fixed;

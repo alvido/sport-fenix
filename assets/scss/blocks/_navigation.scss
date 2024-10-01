@@ -71,7 +71,8 @@
             }
 
             &.current-menu-item {
-                & a {
+                &>a {
+                    font-weight: 700;
                     color: var(--color-black);
                 }
             }

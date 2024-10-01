@@ -105,10 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
         observer: true,
         observeParents: true,
         // loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: paginationClass,
           clickable: true,
