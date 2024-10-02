@@ -1,0 +1,54 @@
+.delivery {
+    padding-top: 80px;
+    font-size: 20px;
+
+    & h2 {
+        margin-bottom: 32px;
+    }
+}
+
+.payment {
+    &__list {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        &>li {
+            padding: 48px 32px;
+            background: var(--color-light-gray);
+
+            & h4 {
+                margin: 16px 0 8px;
+                text-wrap: pretty;
+            }
+
+            & p {
+                font-size: 14px;
+                line-height: 1.7;
+                color: var(--color-dark-gray);
+            }
+
+            & ul {
+                margin-bottom: 16px;
+                list-style: disc;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                color: var(--color-dark-gray);
+            }
+
+            & a {
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: -0.4px;
+                text-decoration: underline;
+                color: var(--color-dark-gray);
+                @include hover {
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
+}

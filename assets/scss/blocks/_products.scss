@@ -8,7 +8,6 @@
     & .products__item {
         display: flex;
         flex-direction: column;
-        cursor: pointer;
 
         @include hover {
 

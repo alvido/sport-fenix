@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Oleksandr Dorobalo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SPORT-FENIX</title>
+    <link rel="icon" type="image/png" href="assets/images/header/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header__top">
+                <div class="wrapper container">
+                    <div class="information">
+                        <a href="mailto:aleks017620@gmail.com">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="#141718" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 7L12 13L21 7" stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            aleks017620@gmail.com
+                        </a>
+                        <div class="group">
+                            <a href="tel:+380 96 093 0123">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 20.1046 19.1046 21 18 21C9.92765 20.5094 3.49056 14.0724 3 6C3 4.89543 3.89543 4 5 4"
+                                        stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                +380 96 093 0123
+                            </a>
+                            <button class="callback">Передзвонити</button>
+                        </div>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 5.99988V6.00988" stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M18 13L14.5 7.99997C13.5691 6.31749 13.967 4.21072 15.4475 2.98372C16.928 1.75673 19.072 1.75673 20.5525 2.98372C22.0329 4.21072 22.4309 6.31749 21.5 7.99997L18 13"
+                                    stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.5 4.75L9 4L3 7V20L9 17L15 20L21 17V15" stroke="#141718" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 4V17" stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15 15V20" stroke="#141718" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            м. Київ, вул. Академіка Білецького, 34, офіс 401
+                        </a>
+                    </div>
+                    <div class="change">
+                        <select id="currency-select" class="currency-select">
+                            <option value="UAH" data-symbol="₴">UAH</option>
+                            <option value="RUB" data-symbol="₽">RUB</option>
+                            <option value="USD" data-symbol="$">USD</option>
+                            <option value="EUR" data-symbol="€">EUR</option>
+                            <option value="BTC" data-symbol="₿">BTC</option>
+                        </select>
+                        <select id="language-select" class="language-select">
+                            <option value="ua" data-image="assets/images/icons/country/Ukraine.svg">Українська</option>
+                            <option value="en" data-image="assets/images/icons/country/UK.svg">English</option>
+                            <option value="ru" data-image="assets/images/icons/country/Russia.svg">Русский</option>
+                            <option value="fr" data-image="assets/images/icons/country/Francais.svg">Français</option>
+                            <option value="es" data-image="assets/images/icons/country/Spain.svg">Español</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="wrapper container">
+                    <a href="index.html" class="header__logo logo">
+                        <img src="assets/images/header/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="menu-item menu-item-has-children current-menu-item">
+                                <a href="#">Продукція </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Амінокислоти</a></li>
+                                    <li><a href="#">Креатиновмісні</a></li>
+                                    <li><a href="#">Захист суглобів та зв'язок</a></li>
+                                    <li><a href="#">Протеїн</a></li>
+                                    <li><a href="#">Підвищення тестостерону</a></li>
+                                    <li><a href="#">Колаген</a></li>
+                                    <li><a href="#">Жироспалювачі</a></li>
+                                    <li><a href="#">Омега та Рибій жир</a></li>
+                                    <li><a href="#">Вітаміни та мінерали</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="delivery.html">Доставка </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="blog.html">Блог </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="payment.html">Оплата </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="production.html">Контрактне виробництво </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="actions">
+                        <button class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="7" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 21L15 15" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <circle cx="12" cy="10" r="3" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.16797 18.849C6.67621 17.1575 8.23372 15.9995 9.99997 16H14C15.7686 15.9994 17.3277 17.1604 17.834 18.855"
+                                    stroke="#141718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="icon basket">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L12 4L17 10" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21 10L19 18C18.8071 19.1828 17.9655 20.0243 17 20H7C6.03448 20.0243 5.19295 19.1828 5 18L3 10H21Z"
+                                    stroke="#141718" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="15" r="2" stroke="#141718" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>2</span>
+                        </button>
+                        <button class="icon burger" id="burgerButton">
+                            <span>
+                                Menu
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="payment">
+                <div class="container">
+                    <h2>Варіанти оплати:</h2>
+                    <a class="more absolute" href="#">
+                        Каталог продукції
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16666 10H15.8333" stroke="#6C7275" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10.8333 15L15.8333 10" stroke="#6C7275" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10.8333 5L15.8333 10" stroke="#6C7275" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <ul class="payment__list">
+                        <li>
+                            <img src="assets/images/payment/wallet.svg" alt="">
+                            <h4>Оплата готівкою курʼєру</h4>
+                            <p>Оплата здійснюється готівкою курʼєрулише у національній валюті (гривня)при отриманні замовлення.</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/payment/credit-card.svg" alt="">
+                            <h4>Передоплата на картку</h4>
+                            <ul>
+                                <li>Термінал самообслуговування (комісія 0,5-1,0%)</li>
+                                <li>Грошовий переказ через касу банку (комісія 0,5-1,0%)</li>
+                            </ul>
+                            <a href="https://privatbank.ua/map">Адреси відділень та автоматів самообслуговування ПриватБанк</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/payment/mail-forward.svg" alt="">
+                            <h4>Накладений платіж</h4>
+                            <p>
+                                Оплата вартості товару та доставкипри отриманні замовлення у поштовому відділенні Нової Пошти
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="informed">
+                <h2 class="center">Будь в курсі</h2>
+                <p class="center">
+                    Підпишіться на останні оновлення і дізнавайтеся про новинки і спеціальні пропозиції першими
+                </p>
+                <div class="informed__form">
+                    <form action="#">
+                        <img src="assets/images/icons/mail.svg" alt="">
+                        <input type="email" name="your-email" placeholder="Ваш e-mail">
+                        <button type="submit">Підписатися</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper container">
+                <a href="index.html" class="footer__logo logo">
+                    <img src="assets/images/header/SportFenix.svg" alt="logo">
+                    <span></span>
+                    <p>Спортивне харчування саме для тебе</p>
+                </a>
+                <nav class="footer__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="menu-item">
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children current-menu-item">
+                            <a href="#">Продукція </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Амінокислоти</a></li>
+                                <li><a href="#">Креатиновмісні</a></li>
+                                <li><a href="#">Захист суглобів та зв'язок</a></li>
+                                <li><a href="#">Протеїн</a></li>
+                                <li><a href="#">Підвищення тестостерону</a></li>
+                                <li><a href="#">Колаген</a></li>
+                                <li><a href="#">Жироспалювачі</a></li>
+                                <li><a href="#">Омега та Рибій жир</a></li>
+                                <li><a href="#">Вітаміни та мінерали</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog.html">Блог </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="payment.html">Оплата </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="production.html">Контрактне виробництво </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper container">
+                <div class="info">
+                    <p class="copy">Copyright © 2024 SportFenix. All rights reserved</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="16" rx="4" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="3" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M16.5 7.49999V7.50099" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.44772 14.4477 7 15 7H18V3H15C12.2386 3 10 5.23858 10 8V10H7"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
