@@ -169,3 +169,62 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // swiper
+
+//peaple Count
+document.addEventListener("DOMContentLoaded", function () {
+  const peopleCheckbox = document.getElementById("people");
+  const productCountContainer = document.getElementById("productCountContainer");
+  const productCountInput = document.getElementById("productCount");
+  const increaseButton = document.getElementById("increaseButton");
+  const decreaseButton = document.getElementById("decreaseButton");
+
+  const toggleproductCount = () => {
+    if (peopleCheckbox) {
+      if (peopleCheckbox.checked) {
+        productCountContainer.classList.remove("visually-hidden");
+      } else {
+        productCountContainer.classList.add("visually-hidden");
+      }
+
+      peopleCheckbox.addEventListener("change", toggleproductCount);
+    }
+  };
+
+  if (increaseButton) {
+    increaseButton.addEventListener("click", function () {
+      let currentValue = parseInt(productCountInput.value) || 1;
+      productCountInput.value = currentValue + 1;
+    });
+  }
+
+  if (decreaseButton) {
+    decreaseButton.addEventListener("click", function () {
+      let currentValue = parseInt(productCountInput.value) || 1;
+      if (currentValue > 1) {
+        productCountInput.value = currentValue - 1;
+      }
+    });
+  }
+
+  // Initialize the visibility on page load
+  toggleproductCount();
+});
+//peaple Count
+
+//tabs
+document.addEventListener("DOMContentLoaded", function () {
+  // Находим все элементы заголовков табов
+  const tabHeaders = document.querySelectorAll(".tabs__header");
+
+  // Обрабатываем клик по каждому заголовку
+  tabHeaders.forEach(header => {
+    header.addEventListener("click", function () {
+      const parentTab = this.parentElement; // Находим родительский элемент tabs__item
+
+      // Добавляем класс 'active' к текущему табу
+      parentTab.classList.toggle("active");
+    });
+  });
+});
+
+//

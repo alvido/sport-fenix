@@ -112,4 +112,224 @@
     display: flex;
     align-items: center;
     gap: 2px;
+
+    & span {
+        font-size: 14px;
+        margin-left: 10px;
+        color: var(--color-dark-gray);
+    }
+}
+
+.product {
+    & .wrapper {
+        align-items: flex-start;
+        gap: clamp(1.25rem, -4.725rem + 12.46vw, 4rem);
+    }
+
+    & .col {
+        width: 50%;
+
+        &:last-child {
+            max-width: 508px;
+        }
+    }
+
+    &__gallery {
+        height: auto;
+        max-height: 730px;
+        padding: 32px;
+    }
+
+    &__thumbnails {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 25px;
+
+        & li {
+            padding: 10px;
+            height: 166px;
+            background: var(--color-light-gray);
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        margin: 16px 0;
+    }
+
+    & .excerpt {
+        color: var(--color-dark-gray);
+    }
+
+    & .quantity {
+        display: block;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--color-light-gray);
+        border-bottom: 1px solid #E8ECEF;
+
+        & .price {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.6px;
+        }
+
+        & button {
+            @include reset-button;
+            height: 32px;
+            padding: 4px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-white);
+            background: var(--color-black);
+            border-radius: var(--border-radius);
+            border: var(--border);
+
+            @include hover {
+                color: var(--color-black);
+                background: var(--color-white);
+
+            }
+        }
+    }
+
+    &__count {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        width: 130px;
+        padding: 12px 16px;
+        background: var(--color-light-gray);
+        border-radius: var(--border-radius-small);
+
+        & input {
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            font-weight: 600;
+
+            text-align: center;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 0;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__desc {
+        width: 30%;
+        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+
+            & span {
+                color: var(--color-dark-gray);
+            }
+        }
+    }
+}
+
+.tabs {
+    &__item {
+
+        &.active {
+
+            & .tabs__header {
+                &::after {
+                    rotate: 180deg;
+                }
+            }
+
+            & .tabs__body {
+                padding: 8px 0;
+                opacity: 1;
+                visibility: visible;
+                max-height: 1000px;
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+        padding: 8px 0;
+        cursor: pointer;
+        border-bottom: 1px solid var(--color-dark-gray);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            translate: 0 -50%;
+            display: block;
+            @include squere(24px);
+            background: url(../images/icons/chevron-down.svg) no-repeat center/ cover;
+            transition: all .3s ease;
+        }
+
+        & h5 {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.4px;
+        }
+    }
+
+    &__body {
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease;
+
+        & .more {
+            margin-top: 8px;
+            @include hover {
+                & svg {
+                    animation: upAndDown 1s linear infinite;
+                }
+            }
+        }
+    }
+
+
+
 }
